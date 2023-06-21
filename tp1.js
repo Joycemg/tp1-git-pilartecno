@@ -18,7 +18,9 @@ function extractValues(data) {
 */
 
 function arrayToLengthCounters(array) {
-  // Tu código aquí
+  return array.reduce((counters, string) => {
+    return { ...counters, [string]: string.length };
+  }, {});
 }
 
 /*  
